@@ -60,7 +60,7 @@
 						</configuration>
 					</plugin>
 
-					<plugin>
+					<!-- <plugin>
 						<groupId>io.fabric8</groupId>
 						<artifactId>docker-maven-plugin</artifactId>
 						<executions>
@@ -109,7 +109,7 @@
 								</image>
 							</images>
 						</configuration>
-					</plugin>
+					</plugin> -->
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>sql-maven-plugin</artifactId>
@@ -125,9 +125,9 @@
 
 						<configuration>
 							<driver>com.mysql.jdbc.Driver</driver>
-							<url>jdbc:mysql://localhost:3307</url>
-							<username>root</username>
-							<password>1234</password>
+							<url>jdbc:mysql://${env.MYSQL_HOST}:3306</url>
+							<username>${env.MYSQL_USER}</username>
+							<password>${env.MYSQL_PASS}</password>
 						</configuration>
 
 						<executions>
@@ -154,9 +154,9 @@
 						<version>${flyway.version}</version>
 						<configuration>
 							<driver>com.mysql.jdbc.Driver</driver>
-							<url>jdbc:mysql://localhost:3307/tmp</url>
-							<user>root</user>
-							<password>1234</password>
+							<url>jdbc:mysql://${env.MYSQL_HOST}:3306/tmp</url>
+							<user>${env.MYSQL_USER}</user>
+							<password>${env.MYSQL_PASS}</password>
 							<schemas>
 								<schema>tmp</schema>
 							</schemas>
@@ -194,9 +194,9 @@
 							<!-- JDBC connection parameters -->
 							<jdbc>
 								<driver>com.mysql.jdbc.Driver</driver>
-								<url>jdbc:mysql://localhost:3307</url>
-								<user>root</user>
-								<password>1234</password>
+								<url>jdbc:mysql://${env.MYSQL_HOST}:3306</url>
+								<user>${env.MYSQL_USER}</user>
+								<password>${env.MYSQL_PASS}</password>
 							</jdbc>
 
 							<!-- Generator parameters -->
