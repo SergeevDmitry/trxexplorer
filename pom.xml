@@ -12,7 +12,7 @@
 	<description>Sample Parent</description>
 
 	<properties>
-		 <java-tron.version>a780ba1</java-tron.version>
+		<java-tron.version>a780ba1</java-tron.version>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jooq.version>3.9.2</jooq.version>
@@ -20,14 +20,6 @@
 		<flyway.version>4.2.0</flyway.version>
 		<junit.version>4.12</junit.version>
 	</properties>
-
-
-	<scm>
-		<connection>scm:git:ssh://git@bitbucket.org/nfleury/trxplorer.io.git</connection>
-		<developerConnection>scm:git:ssh://git@bitbucket.org/nfleury/trxplorer.io.git</developerConnection>
-		<url>https://bitbucket.org/nfleury/trxplorer.io</url>
-	  <tag>HEAD</tag>
-  </scm>
 
 	<distributionManagement>
 		<repository>
@@ -43,7 +35,7 @@
 	</distributionManagement>
 
 	<modules>
-		<module>tron-cli</module>
+		<!-- <module>tron-cli</module> -->
 		<module>model</module>
 		<module>sync-node</module>
 		<module>search-engine</module>
