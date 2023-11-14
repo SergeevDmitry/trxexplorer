@@ -261,7 +261,7 @@
 							<configuration>
 								<lifecycleMappingMetadata>
 									<pluginExecutions>
-										<pluginExecution>
+										<!-- <pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>io.fabric8</groupId>
 												<artifactId>
@@ -277,7 +277,7 @@
 											<action>
 												<ignore />
 											</action>
-										</pluginExecution>
+										</pluginExecution> -->
 										<pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>org.flywaydb</groupId>
